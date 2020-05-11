@@ -41,7 +41,7 @@ def output(iterable):
     current = ""
     for i in range(len(iterable)):
         if (iterable[i] == '1'):
-            current += '*'
+            current += '.'
         else:
             current += ' '
     print(current)
