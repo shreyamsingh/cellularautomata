@@ -1,4 +1,6 @@
 import sys
+from random import randint
+from time import sleep
 rulenum = 0
 
 # determine how many inputs
@@ -20,10 +22,14 @@ else:
     rulenum = 90
 cells = ""
 for i in range(n*2):
+    #non-randomized initial condition
     if (i == n-1):
         cells += "1"
     else:
         cells += "0"
+    #randomized initial condition
+    #cells += str(randint(0, 1))
+
 rulestr = bin(rulenum)
 rulestr = rulestr[2:]
 while (len(rulestr) < 8):
@@ -44,6 +50,7 @@ def output(iterable):
             current += '.'
         else:
             current += ' '
+        sleep(.0001)
     print(current)
 # print(list(triplet(cells)))
 for i in range(int(n-2)):
