@@ -1,13 +1,3 @@
-'''import turtle
-
-cells = [0, 0, 0, ]
-wn = turtle.Screen()        # creates a graphics window
-alex = turtle.Turtle()      # create a turtle named alex
-alex.forward(150)           # tell alex to move forward by 150 units
-alex.left(90)               # turn by 90 degrees
-alex.forward(75)
-
-wn.exitonclick()'''
 import sys
 rulenum = 0
 
