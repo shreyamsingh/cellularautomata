@@ -44,14 +44,15 @@ def triplet(iterable, stride=3):
     for i in range(len(iterable) - stride + 1):
         yield iterable[i:i + stride]
 def output(iterable):
-    current = ""
+    #current = ""
     for i in range(len(iterable)):
         if (iterable[i] == '1'):
-            current += '.'
+            sys.stdout.write(u'\u2580')
         else:
-            current += ' '
-        sleep(.0001)
-    print(current)
+            sys.stdout.write(' ')
+        sleep(.0000001)
+    sys.stdout.write('\n')
+    #print(current)
 # print(list(triplet(cells)))
 for i in range(int(n-2)):
     output(cells)
